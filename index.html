@@ -56,7 +56,11 @@
             <h2 class="text-3xl font-bold mb-6 text-editor-accent">Open Positions</h2>
             <div class="space-y-4">
                 <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden">
-                    <button class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" onclick="toggleAccordion('job1')">
+                    <button id="button-senior-rails-developer" 
+                            class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" 
+                            onclick="toggleAccordion('senior-rails-developer')"
+                            aria-expanded="false"
+                            aria-controls="senior-rails-developer">
                         <div>
                             <h3 class="text-xl font-semibold text-editor-string">Senior Ruby on Rails Developer</h3>
                             <p class="text-editor-comment">Engineering | Hybrid </p>
@@ -65,7 +69,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="job1" class="hidden p-4 border-t border-editor-highlight bg-editor-bg">
+                    <div id="senior-rails-developer" 
+                         class="hidden p-4 border-t border-editor-highlight bg-editor-bg"
+                         role="region"
+                         aria-labelledby="button-senior-rails-developer">
                         <p class="text-editor-text mb-2">We're seeking an experienced Senior Ruby on Rails Developer to join our dynamic team and help build scalable, high-performance web applications for our e-commerce platforms and internal tools.</p>
                         <ul class="list-disc list-inside text-editor-text">
                             <li>5+ years of professional experience with Ruby on Rails</li>
@@ -82,7 +89,11 @@
                     </div>
                 </div>
                 <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden">
-                    <button class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" onclick="toggleAccordion('job2')">
+                    <button id="button-rails-developer" 
+                            class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" 
+                            onclick="toggleAccordion('rails-developer')"
+                            aria-expanded="false"
+                            aria-controls="rails-developer">
                         <div>
                             <h3 class="text-xl font-semibold text-editor-string">Ruby on Rails Developer</h3>
                             <p class="text-editor-comment">Engineering | Hybrid</p>
@@ -91,7 +102,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="job2" class="hidden p-4 border-t border-editor-highlight bg-editor-bg">
+                    <div id="rails-developer" 
+                         class="hidden p-4 border-t border-editor-highlight bg-editor-bg"
+                         role="region"
+                         aria-labelledby="button-rails-developer">
                         <p class="text-editor-text mb-2">We're looking for motivated Ruby on Rails Developers eager to learn and grow with our team. We welcome fresh graduates and offer an excellent mentoring program to support your professional development. The ideal candidate should have a solid foundation in web development and a willingness to dive into Ruby on Rails.</p>
                         <ul class="list-disc list-inside text-editor-text">
                             <li>Experience with any web development framework (e.g., Django, Laravel, Express.js) or willingness to learn</li>
@@ -115,7 +129,11 @@
                     </div>
                 </div>
                 <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden">
-                    <button class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" onclick="toggleAccordion('job3')">
+                    <button id="button-senior-dotnet-developer" 
+                            class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" 
+                            onclick="toggleAccordion('senior-dotnet-developer')"
+                            aria-expanded="false"
+                            aria-controls="senior-dotnet-developer">
                         <div>
                             <h3 class="text-xl font-semibold text-editor-string">Senior .NET Developer</h3>
                             <p class="text-editor-comment">Engineering | Hybrid</p>
@@ -124,7 +142,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="job3" class="hidden p-4 border-t border-editor-highlight bg-editor-bg">
+                    <div id="senior-dotnet-developer" 
+                         class="hidden p-4 border-t border-editor-highlight bg-editor-bg"
+                         role="region"
+                         aria-labelledby="button-senior-dotnet-developer">
                         <p class="text-editor-text mb-2">We're seeking an experienced Senior .NET Developer to join our team and lead the development of robust APIs and full-stack applications.</p>
                         <ul class="list-disc list-inside text-editor-text">
                             <li>5+ years of experience with .NET framework and C#</li>
@@ -141,8 +162,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden mt-4">
-                    <button class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" onclick="toggleAccordion('job4')">
+                <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden">
+                    <button id="button-dotnet-developer" 
+                            class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" 
+                            onclick="toggleAccordion('dotnet-developer')"
+                            aria-expanded="false"
+                            aria-controls="dotnet-developer">
                         <div>
                             <h3 class="text-xl font-semibold text-editor-string">.NET Developer</h3>
                             <p class="text-editor-comment">Engineering | Hybrid</p>
@@ -151,7 +176,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="job4" class="hidden p-4 border-t border-editor-highlight bg-editor-bg">
+                    <div id="dotnet-developer" 
+                         class="hidden p-4 border-t border-editor-highlight bg-editor-bg"
+                         role="region"
+                         aria-labelledby="button-dotnet-developer">
                         <p class="text-editor-text mb-2">We're looking for a motivated .NET Developer to join our team and contribute to the development of APIs and full-stack applications.</p>
                         <ul class="list-disc list-inside text-editor-text">
                             <li>1-2 years of experience with .NET framework and C#</li>
@@ -168,8 +196,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden mt-4">
-                    <button class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" onclick="toggleAccordion('job5')">
+                <div class="bg-editor-sidebar rounded-lg shadow-md border border-editor-highlight overflow-hidden">
+                    <button id="button-senior-product-owner" 
+                            class="w-full text-left p-4 focus:outline-none flex justify-between items-center hover:bg-editor-highlight transition-colors duration-200" 
+                            onclick="toggleAccordion('senior-product-owner')"
+                            aria-expanded="false"
+                            aria-controls="senior-product-owner">
                         <div>
                             <h3 class="text-xl font-semibold text-editor-string">Senior Product Owner</h3>
                             <p class="text-editor-comment">Product | Hybrid</p>
@@ -178,7 +210,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="job5" class="hidden p-4 border-t border-editor-highlight bg-editor-bg">
+                    <div id="senior-product-owner" 
+                         class="hidden p-4 border-t border-editor-highlight bg-editor-bg"
+                         role="region"
+                         aria-labelledby="button-senior-product-owner">
                         <p class="text-editor-text mb-2">We're seeking a value-driven Senior Product Owner who can transform business opportunities into impactful digital solutions. The ideal candidate will focus on delivering measurable business outcomes rather than just managing feature delivery.</p>
                         <ul class="list-disc list-inside text-editor-text">
                             <li>5+ years of experience as a Product Owner in digital product development</li>
@@ -329,10 +364,90 @@
     </footer>
 
     <script>
-      function toggleAccordion(id) {
-          const content = document.getElementById(id);
-          content.classList.toggle('hidden');
-      }
-  </script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const button = document.getElementById(`button-${id}`);
+            const arrow = button.querySelector('svg');
+            
+            // Get all accordion contents and buttons
+            const allAccordions = document.querySelectorAll('[id^="senior-"], [id^="rails-"], [id^="dotnet-"], [id^="product-"]');
+            const allButtons = document.querySelectorAll('[id^="button-"]');
+            
+            // Close all other accordions
+            allAccordions.forEach(accordion => {
+                if (accordion.id !== id) {
+                    accordion.classList.add('hidden');
+                    const otherButton = document.getElementById(`button-${accordion.id}`);
+                    otherButton.setAttribute('aria-expanded', 'false');
+                    otherButton.querySelector('svg').classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle the clicked accordion
+            const isHidden = content.classList.contains('hidden');
+            content.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', !isHidden);
+            arrow.classList.toggle('rotate-180');
+
+            // Update URL
+            if (!content.classList.contains('hidden')) {
+                window.history.replaceState({}, '', `#${id}`);
+            } else {
+                window.history.replaceState({}, '', window.location.pathname);
+            }
+        }
+
+        function openAccordionFromHash() {
+            const hash = window.location.hash;
+            if (hash) {
+                const id = hash.substring(1); // Remove the # from the hash
+                const content = document.getElementById(id);
+                if (content) {
+                    // Close all accordions first
+                    const allAccordions = document.querySelectorAll('[id^="senior-"], [id^="rails-"], [id^="dotnet-"], [id^="product-"]');
+                    allAccordions.forEach(accordion => {
+                        accordion.classList.add('hidden');
+                        const btn = document.getElementById(`button-${accordion.id}`);
+                        btn.setAttribute('aria-expanded', 'false');
+                        btn.querySelector('svg').classList.remove('rotate-180');
+                    });
+
+                    // Open the target accordion
+                    content.classList.remove('hidden');
+                    const button = document.getElementById(`button-${id}`);
+                    button.setAttribute('aria-expanded', 'true');
+                    button.querySelector('svg').classList.add('rotate-180');
+
+                    // Smooth scroll to the accordion
+                    setTimeout(() => {
+                        button.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 100);
+                }
+            }
+        }
+
+        // Run when page loads
+        document.addEventListener('DOMContentLoaded', openAccordionFromHash);
+        
+        // Run when hash changes
+        window.addEventListener('hashchange', openAccordionFromHash);
+        
+        // Optional: Close accordion when clicking outside
+        document.addEventListener('click', function(event) {
+            const isButton = event.target.closest('[id^="button-"]');
+            const isAccordion = event.target.closest('[id^="senior-"], [id^="rails-"], [id^="dotnet-"], [id^="product-"]');
+            
+            if (!isButton && !isAccordion) {
+                const allAccordions = document.querySelectorAll('[id^="senior-"], [id^="rails-"], [id^="dotnet-"], [id^="product-"]');
+                allAccordions.forEach(accordion => {
+                    accordion.classList.add('hidden');
+                    const btn = document.getElementById(`button-${accordion.id}`);
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.querySelector('svg').classList.remove('rotate-180');
+                });
+                window.history.replaceState({}, '', window.location.pathname);
+            }
+        });
+    </script>
 </body>
 </html>
